@@ -46,6 +46,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     
+    //pour tester le git
+    Toast.makeText(this, "coucou", Toast.LENGTH_LONG).show();    
+        
+        
     //TextView creation
     textView1 = new TextView(this);
     textView1 = (TextView) findViewById(R.id.latitudeView);
