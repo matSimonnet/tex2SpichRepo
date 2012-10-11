@@ -146,17 +146,17 @@ public class MainActivity extends Activity {
 			dest.setLatitude(48.4);
 			dest.setLongitude(-4.5);
 			
-			latitude = String.valueOf(loc.getLatitude());
-			longitude = String.valueOf(loc.getLongitude());			
-			speed = String.valueOf(arrondiSpeed(loc.getSpeed()));
-			bearing = String.valueOf((int)loc.getBearing());
+			latitude = "latitude:"+String.valueOf(loc.getLatitude());
+			longitude = "longitude"+ String.valueOf(loc.getLongitude());			
+			speed ="vitesse" + String.valueOf(arrondiSpeed(loc.getSpeed()));
+			bearing = "cap:"+ String.valueOf((int)loc.getBearing());
 			String test = String.valueOf(loc.distanceTo(dest));
 			Log.i("LocationListener", "whyNot");
 			//displaying value
 		    textView1.setText(latitude);
 		    textView2.setText(longitude);
 			textView3.setText(speed);
-			textView4.setText(test);    
+			textView4.setText(bearing);    
 		}
 
 		@Override
